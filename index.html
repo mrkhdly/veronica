@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section class="cf w-100">
+{% for image in site.static_files %}
+{% if image.path contains 'assets/me/' %}
+<div class="fl v-mid w-25">
+      <div class="aspect-ratio aspect-ratio--1x1">
+      <img style="background-image:url({{ image.path }});" class="db bg-center cover aspect-ratio--object br-100" alt="{{ image.name }}" />
+    </div>
+  </div>
+{% endif %}
+{% endfor %}
+  <div class="fl w-75-ns w-100 pl4-ns">
+    <h1 class="f1-l f2 f3 mb0">{{site.title}}</h1>
+    <p class="f3-l f4 f5 measure lh-copy mt0">
+    {{site.description}}
+    </p>
+    {% include social.html %}
+  </div>
+</section>
+{% include gallery.html %}

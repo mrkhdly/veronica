@@ -1,0 +1,13 @@
+<section class="cf gallery pv3">
+{% for image in site.static_files %}
+{% if image.path contains 'assets/images/' %}
+<div class="fl w-third-ns w-50 pa1">
+  <a href="{{ image.path }}">
+    <div class="aspect-ratio aspect-ratio--1x1">
+      <img style="background-image:url({{ image.path }});" class="db bg-center cover aspect-ratio--object" alt="{{ image.name }}" />
+    </div>
+  </a>
+</div>
+{% endif %}
+{% endfor %}
+</section>

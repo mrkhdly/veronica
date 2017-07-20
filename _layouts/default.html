@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+  <div class="w-100 mw8-ns center pa3">
+    <main class="w-100">{{content}}</main>
+    {% include footer.html %}
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.2/baguetteBox.min.js" async></script>
+<script>
+window.onload = function() {
+    baguetteBox.run('.gallery');
+};
+
+  </script>
+</body>
+
+</html>
