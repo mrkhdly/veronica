@@ -4,7 +4,7 @@
 <div class="fl w-third-ns w-50 pa1">
   <a href="{{ image.path | remove_first: "/" }}">
     <div class="aspect-ratio aspect-ratio--1x1">
-      <img style="background-image:url({{ image.path | remove_first: "/" }});" class="db bg-center cover aspect-ratio--object" alt="{{ image.name }}" />
+      <div style="background-image:url({{ image.path | remove_first: "/" }});" class="db bg-center cover aspect-ratio--object" alt="{{ image.name }}" /></div>
     </div>
   </a>
 </div>
