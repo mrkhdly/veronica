@@ -6,7 +6,7 @@ layout: default
 {% if image.path contains 'assets/me' %}
 <div class="fl v-mid w-25">
       <div class="aspect-ratio aspect-ratio--1x1">
-        <div style="background-image:url({{ image.path | remove_first: "/" }});" class="db bg-center cover aspect-ratio--object br-100" alt="{{ image.name }}"></div>
+        <div style="background-image:url({{ image.path | absolute_url }});" class="db bg-center cover aspect-ratio--object br-100" alt="{{ image.name }}"></div>
     </div>
   </div>
 {% endif %}
