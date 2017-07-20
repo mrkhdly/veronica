@@ -3,7 +3,7 @@ layout: default
 ---
 <section class="cf w-100">
 {% for image in site.static_files %}
-{% if image.path contains 'assets/me/' %}
+{% if image.path contains 'assets/me' %}
 <div class="fl v-mid w-25">
       <div class="aspect-ratio aspect-ratio--1x1">
       <img style="background-image:url({{ image.path }});" class="db bg-center cover aspect-ratio--object br-100" alt="{{ image.name }}" />
