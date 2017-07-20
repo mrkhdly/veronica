@@ -10,9 +10,9 @@ location: Location
 start-year: 2016
 
 # Usernames for Socail Media accoutns
-twitter_username: example
-instagram_username: example
-facebook_username: example
+twitter_username: "#"
+instagram_username: "#"
+facebook_username: "#"
 
 # Build settings
 markdown: kramdown
